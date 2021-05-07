@@ -23,7 +23,7 @@ class RenameByTitle(threading.Thread):
       print(self.old_fullname)
     try:
       title = get_title_from_file(self.old_fullname)
-      new_name = Utils.file_nameable(Utils.capitalize_all(title))
+      new_name = Utils.file_nameable(Utils.capitalize_all(title)) + '.pdf'
       if RENAME:
         os.rename(os.path.join(self.path, self.filename),
           os.path.join(self.path, new_name))
