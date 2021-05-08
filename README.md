@@ -1,4 +1,4 @@
-# DuPDF
+# DuPDF: Renaming PDFs by titles in Batch.
 
 Renames PDF files of the same directory based on title.
 It relies on `pdftitle` which obtains the title of a file by `pdfminer`.
